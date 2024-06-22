@@ -48,26 +48,26 @@
             <a href="#" class="navigation__link">Contact</a>
           </li>
         </ul>
-        <img
-          src="./images/icon-hamburger.svg"
-          alt="Hamburger menu"
-          class="mobile-menu__button"
-        />
+        <div id="menu_open" class="mobile-menu__button">
+          <img src="./images/icon-hamburger.svg" alt="Hamburger menu" />
+        </div>
       </nav>
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">About</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Services</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Projects</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Contact</a>
-        </li>
-      </ul>
+      <div class="mobile-menu-container">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Services</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Projects</a>
+          </li>
+          <li class="mobile-menu__contact">
+            <a href="#" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
 
       <div class="main__first-section">
         <h1 class="main__heading">We are creatives</h1>
@@ -96,7 +96,7 @@
         <img
           src="./images/desktop/image-transform.jpg"
           alt="An image of an egg"
-          class="second__image"
+          class="second__image second__image--first"
         />
         <img
           src="./images/desktop/image-stand-out.jpg"
@@ -140,52 +140,46 @@
       <div class="main__third-section">
         <h2 class="third__heading">Client testimonials</h2>
         <div class="third__info">
-          <div class="third__text-section">
-            <img
-              src="./images/image-emily.jpg"
-              alt="Emily photo"
-              class="third__image"
-            />
-            <p class="third__desc">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <div class="third__user-container">
-              <h3 class="user__name">Emily R.</h3>
-              <p class="user__info">Marketing Director</p>
-            </div>
+          <img
+            src="./images/image-emily.jpg"
+            alt="Emily photo"
+            class="third__image"
+          />
+          <p class="third__desc">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="third__user-container">
+            <h3 class="user__name">Emily R.</h3>
+            <p class="user__info">Marketing Director</p>
           </div>
 
-          <div class="third__text-section">
-            <img
-              src="./images/image-thomas.jpg"
-              alt="Thomas photo"
-              class="third__image"
-            />
-            <p class="third__desc">
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
-            <div class="third__user-container">
-              <h3 class="user__name">Thomas S.</h3>
-              <p class="user__info">Chief Operating Officer</p>
-            </div>
+          <img
+            src="./images/image-thomas.jpg"
+            alt="Thomas photo"
+            class="third__image third__image--last"
+          />
+          <p class="third__desc third__desc--last">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="third__user-container third__user-container--last">
+            <h3 class="user__name">Thomas S.</h3>
+            <p class="user__info">Chief Operating Officer</p>
           </div>
 
-          <div class="third__text-section">
-            <img
-              src="./images/image-jennie.jpg"
-              alt="Jennie photo"
-              class="third__image"
-            />
-            <p class="third__desc">
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
-            <div class="third__user-container">
-              <h3 class="user__name">Jennie F.</h3>
-              <p class="user__info">Business Owner</p>
-            </div>
+          <img
+            src="./images/image-jennie.jpg"
+            alt="Jennie photo"
+            class="third__image"
+          />
+          <p class="third__desc">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="third__user-container">
+            <h3 class="user__name">Jennie F.</h3>
+            <p class="user__info">Business Owner</p>
           </div>
         </div>
       </div>
@@ -299,5 +293,7 @@
         </a>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
